@@ -11,12 +11,9 @@ exports[`should render an item with fixture data 1`] = `
     </h4>
   </Link>
   <p>
-    Amount: 
-    999
-  </p>
-  <p>
-    Created at: 
-    0
+    $9.99
+    -
+    January 1st, 1970
   </p>
 </div>
 `;
