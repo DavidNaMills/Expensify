@@ -1,0 +1,55 @@
+const STATIC = 'unknown';
+
+// function getLocation(location){
+//     if(location){
+//         return <p>Location: {user.location}</p>
+//     }
+// }
+
+// const getLocation=(location)=> location && user.location;
+
+
+// const template2 = (
+//     <div>
+//         <h1>{user.userName ? user.userName : 'Anonymous'}</h1>
+//         {(user.age && user.age >= 18) && <p>Age: {user.age}</p>}        
+//         {getLocation(user.location)}
+//     </div>
+// );
+
+
+let count=0;
+
+const addOne=()=>{
+    count++;
+    renderCounterApp();
+};
+
+const subtract=()=>{
+    count--;
+    renderCounterApp();
+};
+
+const reset = ()=>{
+    count=0;
+    renderCounterApp();
+};
+
+
+const appRoot = document.getElementById('app');
+
+
+const renderCounterApp = () =>{
+    const template2 = (
+        <div>
+            <h1>Count: {count}</h1>
+            <button id="" className="button" onClick={addOne}>+1</button>
+            <button id="" className="btn2" onClick={subtract}>-1</button>
+            <button id="" className="btn3" onClick={reset}>Reset</button>
+        </div>
+    );
+
+    ReactDOM.render(template2, appRoot);
+};
+
+renderCounterApp();
