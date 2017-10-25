@@ -1,6 +1,6 @@
 const path = require('path');
 const ExtractTextPlugin= require('extract-text-webpack-plugin');
-const AbsolutePath = path.join(__dirname, 'public', 'dist');
+// const AbsolutePath = 
 
 
 module.exports=(env)=>{
@@ -13,7 +13,7 @@ module.exports=(env)=>{
         entry:'./src/app.js',
         // entry:'./src/playground/hoc.js',
         output: {
-            path: AbsolutePath,
+            path: path.join(__dirname, 'public', 'dist'),
             filename: 'bundle.js'
         },
     
