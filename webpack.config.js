@@ -13,7 +13,7 @@ module.exports=(env)=>{
         entry:'./src/app.js',
         // entry:'./src/playground/hoc.js',
         output: {
-            path: path.join(__dirname, 'public', 'dist'),
+            path: path.join(__dirname, 'public'),
             filename: 'bundle.js'
         },
     
