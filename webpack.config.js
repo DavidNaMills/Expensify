@@ -28,18 +28,9 @@ module.exports=(env)=>{
                     test: /\.s?css$/,
                     use: CSSExtract.extract({
                         use: [
-                            {
-                                loader: 'css-loader',
-                                options: {
-                                    sourceMap:true
-                                }
-                            },
-                            {
-                                loader:'sass-loader',
-                                options: {
-                                    sourceMap:true
-                                }
-                            }
+                             'css-loader',
+
+                            'sass-loader'
                         ]
                     })
                 }
