@@ -3,6 +3,9 @@ import {shallow} from 'enzyme';
 import {AddExpensePage} from '../../components/AddExpensePage';
 import expenses from '../fixtures/expenses';
 
+import 'react-dates/initialize';
+// import 'react-dates/lib/css/_datepicker.css';
+
 let addExpense, history, wrapper;
 
 beforeEach(()=>{

@@ -33,7 +33,6 @@ test('should return 0 if not expenses', ()=>{
 
 test('should correctly add up a single expense', ()=>{
     const result = parseFloat(expensesTotal([testExpenses[1]]));
-    console.log();
     expect(result).toBe(testExpenses[1].amount);
 });
 
