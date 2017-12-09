@@ -6,7 +6,7 @@
     "start": "node server/server.js",
     "serve": "live-server public/",
     "build:dev": "webpack",
-    "build:prod": "webpack -p --env production",
+    "build:prod": "webpack -p --env 'production'",
     "dev-server": "cross-env NODE_ENV=development webpack-dev-server",
     "test": "cross-env NODE_ENV=test jest --watchAll --config=jest.config.json",
     "test-watch": "test --watch",

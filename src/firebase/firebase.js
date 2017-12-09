@@ -1,7 +1,7 @@
 import * as firebase from 'firebase';
 
 const config = {
-    apiKey: process.env.FIREBASE_API_KEY ,
+    apiKey: process.env.FIREBASE_API_KEY,
     authDomain: process.env.FIREBASE_AUTHDOMAIN,
     databaseURL: process.env.FIREBASE_DATABASEURL,
     projectId: process.env.FIREBASE_PROJECTID,
@@ -15,6 +15,7 @@ const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
 // expenses with 3 items
 // description, not, amount, created at
+//this is a comment to get heroku to work
 
 
 const ex1 = {
