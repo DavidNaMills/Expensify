@@ -4,7 +4,7 @@ import ExpenseForm from './ExpenseForm';
 import {startEditExpense} from '../actions/expenses';
 import {startRemoveExpense} from '../actions/expenses';
 
-
+// edit expense page
 
 export class EditExpensePage extends React.Component{ 
     onSubmit=(expense)=>{
